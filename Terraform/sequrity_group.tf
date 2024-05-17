@@ -20,6 +20,30 @@ resource "aws_security_group" "allow_tls" {
 
   ingress {
     description = "TLS from VPC"
+    from_port   = 3000 # Grafana port
+    to_port     = 3000
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+ ingress {
+    description = "TLS from VPC"
+    from_port   = 9090 # port Prometheus
+    to_port     = 9090
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "TLS from VPC"
+    from_port   = 9100 #  port Node exporter
+    to_port     = 9100
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+  
+  ingress {
+    description = "TLS from VPC"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"

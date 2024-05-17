@@ -1,0 +1,16 @@
+---
+# tasks file for roles
+- name: Add the 'prometheus' user
+  ansible.builtin.user:
+    name: "{{ p_user }}"
+    shell: /bin/false
+    create_home: false
+    state: present
+
+- name: Add the 'node_exporter' user
+  ansible.builtin.user:
+    name: "{{ n_user }}"
+    shell: /bin/false
+    create_home: false
+    state: present
+
