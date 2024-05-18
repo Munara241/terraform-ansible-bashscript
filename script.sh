@@ -12,3 +12,4 @@ sudo yum install ansible -y
 sudo ansible --version
 
 
+
