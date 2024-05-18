@@ -1,0 +1,5 @@
+prometheus_grafana ansible_host=18.185.103.212 ansible_user=ubuntu
+
+
+
+
