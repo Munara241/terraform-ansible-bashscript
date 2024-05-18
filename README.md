@@ -2,8 +2,7 @@
 
 # You need to have 3 things in 1 place:
 
-```
-hcl
+``` hcl
 
 Bash script file
 Terraform folder with all needed files inside
