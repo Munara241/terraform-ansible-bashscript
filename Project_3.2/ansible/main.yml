@@ -1,6 +1,6 @@
-- host: all
+- hosts: all
   become: yes
   tasks:
   roles:
     - prometheus
-    - 
+  
