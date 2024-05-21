@@ -31,7 +31,8 @@ function ansible() {
 }
 
 
-prepare_bastion_ubuntu
+prepare_bastion
 create_instance
 update_ip
-ansible 
+sleep 20
+ansible

@@ -5,7 +5,7 @@
     system: true
     create_home: false
 
-- name: Download foo.conf
+- name: Download prometheus
   ansible.builtin.get_url:
     url: https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz
     dest: /tmp/prometheus.tar.gz
